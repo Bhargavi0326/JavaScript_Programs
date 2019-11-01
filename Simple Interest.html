@@ -1,0 +1,26 @@
+<html>
+    <head>
+    </head>
+<body>
+        <h1>Simple Interest Calculator</h1>
+
+        Amount: <input id="p"><br/>
+        Rate: <input id="r"><br/>
+        No. of Years: <input id="n"><br/>
+
+        <button onclick="sinterest()">Calculate</button>
+
+        <p id="result"></p>
+        <script>
+                function sinterest()
+                {
+                    p = document.getElementById("p").value;
+                    n = document.getElementById("n").value;
+                    r = document.getElementById("r").value;
+                    result = document.getElementById("result");
+                    
+                    result.innerHTML = "The interest is " + (p*n*r/100);
+                }
+            </script>
+    </body>
+</html>
