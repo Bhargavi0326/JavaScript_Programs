@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            div {
+                display: table-row;
+            }
+
+            label, input {
+                display: table-cell;
+            }
+        </style> 
+    </head>
+
+    <body>
+        <h1>Sum and Average Calculator</h1>
+
+        <div> <label>Subject 1 </label> <input id="S1"> </div>
+        <div> <label>Subject 2 </label> <input id="S2"> </div>
+        <div> <label>Subject 3 </label> <input id="S3"> </div>
+        <div> <label>Subject 4 </label> <input id="S4"> </div>
+        <div> <label>Subject 5 </label> <input id="S5"> </div>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <p id="sumP"></p>
+        <p id="averageP"></p>
+        <script>
+                function calculate()
+                {
+                    a = parseInt(document.getElementById("S1").value);
+                    console.log(typeof(a))
+                    b = parseInt(document.getElementById("S2").value);
+                    c = parseInt(document.getElementById("S3").value); 
+                    d = parseInt(document.getElementById("S4").value);
+                    e = parseInt(document.getElementById("S5").value);
+                    sum = parseInt(document.getElementById("sumP"));
+                    average=parseInt(document.getElementById("average"));
+                    sumP.innerHTML = "The sum is " + (a+b+c+d+c);
+                    averageP.innerHTML = "The average of the marks is " + ((a+b+c+d+e)/5);
+    
+                
+                }
+            </script>
+    </body>
+</html>
