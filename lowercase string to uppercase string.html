@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click button to convert the string to uppercase!</p>
+
+<button onclick="ucase()">Convert</button>
+
+<p id="content"></p>
+
+<script>
+function ucase() {
+  var str = "Hello World!";
+  var result = str.toUpperCase();
+  document.getElementById("content").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
