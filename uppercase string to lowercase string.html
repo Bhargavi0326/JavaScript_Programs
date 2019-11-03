@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click button to convert the string to lowercase!</p>
+
+<button onclick="lcase()">Convert</button>
+
+<p id="content"></p>
+
+<script>
+function lcase() {
+  var str = "Hello World!";
+  var result = str.toLowerCase();
+  document.getElementById("content").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
