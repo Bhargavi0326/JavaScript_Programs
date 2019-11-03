@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to concatenate two strings to form a new string!</p>
+
+<button onclick="joinstr()">Join</button>
+
+<p id="content"></p>
+
+<script>
+function joinstr() {
+  var str1 = "Hello ";
+  var str2 = "world!";
+  var res = str1.concat(str2);
+  document.getElementById("content").innerHTML = res;
+}
+</script>
+
+</body>
+
+</html>
