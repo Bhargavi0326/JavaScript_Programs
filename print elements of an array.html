@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Print elements of an array in console!</p>
+<script>
+    function printEle(s = [],index){
+
+        if(s.length > index){
+            console.log(s[index])
+            printEle(s,index+1)
+        }
+    }
+    arr= [2,3,4,5];
+    printEle([2,3,4,5],0);
+</script>
+</body>
+</html>
