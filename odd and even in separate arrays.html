@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Odd and even in two seperate arrays</p>
+<span id="con"></span>
+<script>
+
+var arr = [9, 9, 111, 2, 3, 4, 4, 5, 7,7,77];
+
+var arr1=arr.filter((a)=>{
+	return(a%2==0)
+})
+console.log(arr1.sort())
+
+var arr1=arr.filter((a)=>{
+	return(a%2!=0)
+})
+console.log(arr1.sort((a,b) => {
+	return(a-b)
+}))
+
+
+</script>
+
+
+</body>
+</html>

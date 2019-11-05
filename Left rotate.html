@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Left Rotate</p>
+<span id="con"></span>
+<script>
+
+function rotate(a,b){
+	var arr=[]
+	for (i=0; i<a.length;i++){
+		arr.push(a[i]);
+	};
+	for (j=1; j<=b; j++){
+		arr.shift(arr.push(arr[0]));
+	}
+	return arr;
+}
+
+</script>
+
+
+</body>
+</html>

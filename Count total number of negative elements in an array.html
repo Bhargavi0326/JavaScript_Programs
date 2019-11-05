@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+        <p>Count total number of negative elements in array</p>
+        <span id="content"></span>
+        <script>
+        var arr=[1,2,4,3,-1,-8,3,2]
+        var length=arr.length
+        res=[]
+        for (i=0;i<length;i++){
+            if(arr[i]<0){
+                res.push(arr[i])
+            }
+        }
+        console.log(res)
+        document.getElementById("content").innerHTML=res.value
+        </script>
+        
+        
+        <script>
+        var myArray = [4, -5, 0, 2, -67, 8, 10, -34];
+        
+        function getNegativeNumbers(array) {
+          return array.filter(function(value) {
+            return value < 0;
+          });
+        }
+        console.log(getNegativeNumbers(myArray));
+        </script>
+        </body>
+        </html>

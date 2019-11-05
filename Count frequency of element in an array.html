@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Print frequency of array elements</p>
+<span id="con"></span>
+<script>
+
+var count={}
+var array=[1,2,3,4,2,3,2,1]
+var countfunction = keys =>  {
+	count[keys] = ++count[keys] || 1;
+}
+var res=array.forEach(countfunction);
+
+console.log(count);
+
+
+</script>
+
+
+</body>
+</html>

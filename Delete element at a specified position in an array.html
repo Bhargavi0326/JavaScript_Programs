@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+        <p>Delete array element</p>
+        <span id="content"></span>
+        <script>
+        
+        ///length property
+        var ar = [1, 2, 3, 4, 5, 6];
+        ar.length = 4; 
+        console.log( ar ); 
+        
+        //pop method
+        var ar = [1, 2, 3, 4, 5, 6];
+        ar.pop(); 
+        console.log( ar );
+        
+        ///shift method
+        var ar = ['zero', 'one', 'two', 'three'];
+        ar.shift();
+        console.log( ar );
+        
+        ///splice method
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+        var removed = arr.splice(1,2); ///1=>>index to begin 2=>>deleted number 3=>>inserted value
+        console.log(arr);
+        
+        ///delete method
+        var ar = [1, 2, 3, 4, 5, 6];
+        delete ar[4]; 
+        console.log( ar )
+        
+        </script>
+        </body>
+        </html>
