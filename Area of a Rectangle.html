@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Area of a Rectangle</title>
+        <meta charset="utf-8">
+        <style>
+            label{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Area of a Rectangle</h1>
+        <p id="area"></p>
+        <label for="len">Length:
+            <input type="text" id="len">
+        </label>
+        <label for="wid">Width:
+            <input type="text" id="wid">
+        </label>
+        <button id="calcBtn">Calculate</button>
+        
+        <script>
+            //get inputs and button element from document
+            
+            var lenEl=document.querySelector("#len");
+            var widEl=document.querySelector("#wid");
+            
+            var calcBtn=document.querySelector("#calcBtn");
+            
+            var areagEl=document.querySelector("#area");
+            
+            //bind a function tothe onClick event the AddBtn
+            calcBtn.onclick=function(){
+                
+                //area formule length*width
+                area=Number(lenEl.value)*Number(widEl.value)
+
+                //write the results into #area #perimeter document 
+                areagEl.innerHTML="Area of rectange:"+area;
+            }
+            
+            
+        </script>
+    </body>
+</html>
