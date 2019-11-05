@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Print the second largest element of an array!</p>
+<script>
+
+        var arr=[8,2,4,1,2,5,3,4,6]
+        
+        var rearr=Array.from(new Set(arr));
+        console.log(rearr)
+        
+        rearr.sort(function(a,b){
+            return b-a;
+        });
+        
+        console.log(rearr[1]);
+        console.log(rearr[rearr.length-2]);
+        </script>
